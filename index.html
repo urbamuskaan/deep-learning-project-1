@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chest X-ray Classifier</title>
+    </head>
+    <body>
+        <h1>Chest X-ray Classifier</h1>
+        <p>Upload a chest X-ray image to classify whether it shows signs of pneumonia or not.</p>
+
+        <!-- Form to upload an image -->
+        <form method="post" actions="/" enctype="mutipart/form-data">
+            <!-- File input -->>
+            <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png">
+            <!-- Classify button -->
+            <button type="submit" class="btn btn-primary">Classify</button>
+        </form>
+
+            <!-- Placeholder for displaying prediction results -->
+            <div id="prediction-result">
+                <!-- Predictions result will be displayed here-->
+            </div>
+    </body>
+    </html>
